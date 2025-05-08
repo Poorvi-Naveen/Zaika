@@ -22,7 +22,7 @@ Zaika bridges the gap between international visitors and local food culture. It 
 ## Overview (Screenshots) 
 | Home Screen | Home Screen 2 | HomeScreen- Menu | HomeScreen - LocalRecipes | 
 |---------------|---------------|-------------|------------|
-|![HomeScreen1](https://github.com/user-attachments/assets/64df17bb-d2bb-4b9a-afff-ad2d5e20f793)|abc-2a3f9f418826)|![HomeScreen2](https://github.com/user-attachments/assets/5cc1722b-dbc0-4cb6-af65-c344b90a6d54)|![HomeScreen3](https://github.com/user-attachments/assets/0be09dd3-7d60-43d0-bd93-aa1668f9bf47)|![Screenshot 2025-01-06 102306](https://github.com/user-attachments/assets/03806de4-672f-4029-b83b-6d231ce11913)|
+|![HomeScreen1](https://github.com/user-attachments/assets/64df17bb-d2bb-4b9a-afff-ad2d5e20f793)|![HomeScreen2](https://github.com/user-attachments/assets/5cc1722b-dbc0-4cb6-af65-c344b90a6d54)|![HomeScreen3](https://github.com/user-attachments/assets/0be09dd3-7d60-43d0-bd93-aa1668f9bf47)|![Screenshot 2025-01-06 102306](https://github.com/user-attachments/assets/03806de4-672f-4029-b83b-6d231ce11913)|
 
 | Login Page | User Screen 1 | User Screen 2 | User Screen 3 | 
 |---------------|---------------|-------------|------------|
