@@ -20,6 +20,17 @@ Zaika bridges the gap between international visitors and local food culture. It 
 * Exclusive UI: Seemless user interface for easy navigation.
 
 ## Overview (Screenshots) 
+| Home Screen | Home Screen 2 | HomeScreen- Menu | HomeScreen - LocalRecipes | 
+|---------------|---------------|-------------|------------|
+|![HomeScreen1](https://github.com/user-attachments/assets/64df17bb-d2bb-4b9a-afff-ad2d5e20f793)|abc-2a3f9f418826)|![HomeScreen2](https://github.com/user-attachments/assets/5cc1722b-dbc0-4cb6-af65-c344b90a6d54)|![HomeScreen3](https://github.com/user-attachments/assets/0be09dd3-7d60-43d0-bd93-aa1668f9bf47)|![Screenshot 2025-01-06 102306](https://github.com/user-attachments/assets/03806de4-672f-4029-b83b-6d231ce11913)|
+
+| Login Page | User Screen 1 | User Screen 2 | User Screen 3 | 
+|---------------|---------------|-------------|------------|
+   |![Login](https://github.com/user-attachments/assets/9f31cf1f-23b5-43a1-9720-d7577d2a59cb)|![HomeLogin1](https://github.com/user-attachments/assets/bb96c0a9-fbf8-4c19-b444-1c79fc07e94b)|![HomeLogin2](https://github.com/user-attachments/assets/146dab04-c3c9-4d38-9863-61dd62b9a3f2)|![HomeLogin3](https://github.com/user-attachments/assets/53ce1d55-9c27-41fa-a64f-c7429789dd6e)|
+
+| Map | Admin Page | Admin Page - User Log | Admin Page - Update Maps | 
+|---------------|---------------|-------------|------------|
+|![Map](https://github.com/user-attachments/assets/d387b665-566a-49fd-89a0-18b5e93d3824)|![UserLog](https://github.com/user-attachments/assets/37943f7f-b556-4dfe-9bbd-58effdb76c77)|![MapUpdate1](https://github.com/user-attachments/assets/7edd987a-058f-4a30-aeec-08eea737b4f8)|![MapUpdate2](https://github.com/user-attachments/assets/273ab0d8-dca2-4192-830e-acb4c7345d24)|
 
 ## Tech Stack
 * Frontend : HTML, CSS, Javascript
@@ -30,12 +41,11 @@ Zaika bridges the gap between international visitors and local food culture. It 
 
 ## Installation Guide
 1. Clone the repository :
-****git clone https://github.com/yourusername/zaika-local-cuisine-finder.git
-****cd zaika-local-cuisine-finder
-
+   - git clone https://github.com/yourusername/zaika-local-cuisine-finder.git
+   - cd zaika-local-cuisine-finder
 2. Install dependencies :
-   npm install
+   - npm install
 3. Start the server:
-   node app.js
-5. Visit :
-   http://localhost:3000
+   - node app.js
+4. Visit :
+   - http://localhost:3000
