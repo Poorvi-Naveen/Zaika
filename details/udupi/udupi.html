@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  /*body {
+    font-family: ;
+  }*/
+
+    .tab {
+    overflow: hidden;
+    background-color: #250114;
+  }
+
+  .tab.container {
+    justify-content: space-between;
+    align-items: right;
+    max-width: unset;
+  }
+
+  .tab button {
+    align-items: center;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+    padding: 20px 60px;
+    transition: 0.3s;
+    font-size: 25px;
+  }
+
+  .tab button:hover {
+    background-color: rgb(140, 111, 75);
+  }
+
+  .tablinks {
+    color: rgb(240, 241, 241);
+  }
+
+ 
+  .tab button.active {
+    background-color: #511212;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaika - UDUPI</title>
+  <meta name="title" content="Zaika - Your Guide to nearby Culinary Treasures">
+  <meta name="description" content="This is a local cuisine finder website developed primitively">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" as="image" href="/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="/images/hero-slider-3.jpg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #250114;
+    }
+  
+
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #250114;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-container {
+  width: 100%; /* Ensure the container takes the full width */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  padding: 20px 0; /* Optional padding on top and bottom */
+  background-color: #250114;
+}
+
+.restaurant-cards {
+  display: flex; /* Lay out the cards horizontally */
+  gap: 20px; /* Space between cards */
+  min-width: 100%; /* Ensure the container expands to the full width */
+}
+
+.card {
+  flex: 0 0 300px; /* Fixed width for each card */
+  background-color: #250114;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%; /* Make image fit the card width */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #8d7207;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 5px 0;
+}
+
+.tag {
+  display: inline-flex; /* Use inline-flex for inline alignment */
+  align-items: center; /* Vertically center-align stars and text */
+  gap: 4px; /* Horizontal spacing between stars and rating score */
+  background-color: #e0e0e0;
+  color: #555;
+  font-size: 10px; /* Smaller font size */
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+.tag .star {
+  color: #ffc107; /* Yellow stars */
+  font-size: 20px; /* Star size slightly larger for clarity */
+}
+
+.tag .rating-score {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.offers {
+  margin-top: 15px;
+}
+
+.offer-main {
+  background-color:  hsl(38, 61%, 73%);;
+  color: #101010;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.offer-secondary {
+  color: #007bff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bank-offer {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+    .login-form {
+      width: 300px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: rgb(76, 76, 76);
+      box-shadow: 0 0 10px rgba(211, 194, 194, 0.1);
+      border-radius: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: rgb(11, 83, 11);
+    }
+
+    .cancel-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .cancel-btn:hover {
+      background-color: rgb(95, 14, 14);
+    }
+    
+   
+
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+            background-color: #250114;
+        }
+
+        .item {
+            flex: 0 0 auto;
+            width: 250px;
+            margin-right: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            height: 150px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .item p {
+            margin: 10px;
+            font-size: 14px;
+        }
+
+        
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+   - #PRELOADER
+ -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ZAIKA</p>
+  </div>
+
+
+
+
+
+  <!-- 
+   - #TOP BAR
+ -->
+
+  <div class="topbar">
+    <div class="container">
+      <div class="separator"></div>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Zaika.@gmail.com</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- 
+   - #HEADER
+ -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/afterlogin" class="logo">
+        <img src="/images/mainlogo.png" width="160" height="50" alt="Zaika - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="/afterlogin" class="logo">
+          <img src="/images/mainlogo.png" width="160" height="50" alt="Zaika - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/afterlogin" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Foods</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Bookmark</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Favourites</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">My Coupons</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="/afterlogin" class="btn btn-secondary">
+        <span class="text text-1">Back</span>
+
+        <span class="text text-2" aria-hidden="true">Back</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+       - #HERO
+     -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="/images/UDUPIHERO1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">UDUPI</span>
+
+              <span class="text text-2" aria-hidden="true">UDUPI</span>
+
+
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="/images/UDUPIHERO22.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">UDUPI</span>
+
+              <span class="text text-2" aria-hidden="true">UDUPI</span>
+            </a>
+
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="/images/UDUPIHERO3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">UDUPI</span>
+
+              <span class="text text-2" aria-hidden="true">UDUPI</span>
+            </a>
+
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="/images/map.gif" width="50" height="60" alt="booking icon">
+
+          <span class="label-2 text-center span">Open Maps</span>
+        </a>
+
+      </section>
+      
+      <!--breakfast-->
+     
+    
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <h2 class="headline-1 section-title">Delicious Eats</h2>
+        <img src="/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+          <img src="/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+
+        <!--restro-->
+        <div class="separator"></div>
+        <div class="separator"></div>
+        <!DOCTYPE html>
+
+  <div class="scroll-container">
+    <div class="restaurant-cards">
+      <div class="card">
+        <a href="/details/udupi/woodland">
+        <img src="/images/woodland.jpg" alt="Brahmins Coffee Bar">
+        <div class="card-content">
+          <h3>Woodland's Resturants</h3>
+          <p>Udupi people love this place </p></a>
+          <div class="tag">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star" style="color: #e0e0e0;">★</span>
+            <span class="rating-score">4.4</span>
+          </div>
+          <p>Address: Dr. U. R. RAO Complex Near Sri <br>Krishna Mutt, Udupi 576101 India<br>
+            Phone: 095901 76333</p>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+        
+          <div class="offers">
+            <div class="offer-main">20% Off</div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="/details/udupi/Naivedya">
+        <img src="/images/naivediya.jpg" alt="Albert Bakery">
+        <div class="card-content">
+          <h3>Naivedya</h3>
+          <p> Vegetarian people where are you</p></a>
+          <div class="tag">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star" style="color: #e0e0e0;">★</span>
+            <span class="rating-score">4.0</span>
+          </div>
+          <p>Address: Manjuradha Building, Lombard<br> Memorial Hospital Rd, Kadekoppala, Chitpady,<br> Udupi, Karnataka 576101<br>Phone: 098861 65349</p>
+         
+        
+
+          <div class="offers">
+            <div class="offer-main">15% Off</div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="/details/udupi/udupiResidency">
+        <img src="/images/udupire.jpg" alt="Hotel Dwarka">
+        <div class="card-content">
+          <h3>Udupi Residency</h3>
+          <p>Ghee Roast must tryy</p></a>
+          <div class="tag">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star" style="color: #e0e0e0;">★</span>
+            <span class="rating-score">4.1</span>
+          </div>
+          <p>Address: Bus Stand, Govind Ballabh Pant Rd,<br> Near Service, Thenkpete, Maruthi Veethika,<br> Udupi, Karnataka 576101<br>Phone: 0820 253 0005</p>
+          
+          
+            
+          <div class="offers">
+            <div class="offer-main">15% Off</div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="/details/udupi/HotelThimmapa"> 
+        <img src="/images/thimmappa.jpeg" alt="SLV Corner">
+        <div class="card-content">
+          <h3>Hotel Thimmppaa</h3>
+          <p> Seafood lovers your paradise </p></a>
+          <div class="tag">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star" style="color: #e0e0e0;">★</span>
+            <span class="rating-score">4.1</span>
+          </div>
+          <p>Address: 8PWM+PW6, Udupi - Malpe Rd, <br>Adi-udupi, Udupi, Karnataka 576102 <br> 
+            Phone: 098457 63799</p>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          <div class="offers">
+            <div class="offer-main">15% Off</div>
+           
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <a href="/details/udupi/Kediyoor">
+        <img src="/images/kediyoor.jpg" alt="Hotel Kediyoor">
+        <div class="card-content">
+          <h3>Hotel Kediyoor</h3>
+          <p>You name it you get it </p></a>
+          <div class="tag">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star" style="color: #e0e0e0;">★</span>
+            <span class="rating-score">4.2</span>
+          </div>
+          <p>Address:ss: BUS STAND, Shiribeedu, near <BR>SERVICE, Udupi, Karnataka 576101<BR>
+            Phone: 0820 250 8145</p>
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          <div class="offers">
+            <div class="offer-main">15% Off</div>
+           
+          </div>
+        </div>
+      </div>
+        <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+          <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+        </a>
+        <script src="/js/script.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>//toggletabs
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+        </script>
+</body>
+
+</html>

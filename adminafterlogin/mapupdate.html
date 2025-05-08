@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika - Your Guide to nearby Culinary Treasures</title>
+    <meta name="title" content="Zaika - Your Guide to nearby Culinary Treasures">
+    <meta name="description" content="This is a local cuisine finder website developed primitively">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        .hero text-center {
+            background-image: image("/images/footer-form-bg.png");
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #250114;
+            background-image: url('/images/footer-form-bg.png');
+        }
+        .admin-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #admin-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        #add-marker-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #add-marker-form input{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color:#ccc;
+        }
+        #add-marker-form textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color:#ccc;
+        }
+        #add-marker-form button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4d2401;
+            color: white;
+            cursor: pointer;
+        }
+        #add-marker-form button:hover {
+            background-color: #4d0f4d;
+        }
+        #add-marker-form button:active {
+            background-color: #4d0f4d;
+        }
+        #add-marker-form button:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+        <div class="circle"></div>
+        <p class="text">ZAIKA</p>
+    </div>
+
+
+
+
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+        <div class="container">
+            <div class="separator"></div>
+
+            <div class="separator"></div>
+
+            <a href="mailto:booking@restaurant.com" class="topbar-item link">
+                <div class="icon">
+                    <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">Zaika.@gmail.com</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="/images/mainlogo.png" width="160" height="50" alt="Zaika - Home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <a href="/index2" class="logo">
+                    <img src="/images/mainlogo.png" width="160" height="50" alt="Zaika - Home">
+                </a>
+            </nav>
+
+            <a href="/adminafterlogin/adminafterlogin" class="btn btn-secondary">
+                <span class="text text-1">Back</span>
+
+                <span class="text text-2" aria-hidden="true">Back</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+    <!--    -->
+    <main>
+        <article>
+            <section class="hero text-center" aria-label="home" id="home">
+            <div class="container">
+                <!--<h1 class="heading-1">Update Map</h1>
+                <p class="body-1">Update the map with the new location of the restaurant</p>
+                <form action="/mapupdate" method="POST">
+                    <div class="form-group">
+                        <label for="latitude">Latitude</label>
+                        <input type="text" name="latitude" id="latitude" required>
+
+                    </div>-->
+                <div id="admin-controls">
+                    <h2 style="align-self: auto;">Update Map</h2>
+                    <form id="add-marker-form">
+                        <input type="text" id="name" placeholder="Name" required />
+                        <textarea id="description" placeholder="Description" required></textarea>
+                        <input type="number" id="lat" placeholder="Latitude" required step="any" />
+                        <input type="number" id="lng" placeholder="Longitude" required step="any" />
+                        <button type="submit">Add Marker</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+            <!-- 
+    - #FOOTER
+  -->
+
+            <footer class="footer section has-bg-image text-center">
+                <div class="container">
+
+                    <div class="footer-top grid-list">
+
+                        <div class="footer-brand has-before has-after">
+
+                            <a href="#" class="logo">
+                                <img src="/images/mainlogo.png" width="160" height="50" loading="lazy" alt="ZAIKA home">
+                            </a>
+                            <a href="mailto:Zaika@gamil.com" class="body-4 contact-link">Zaika@gamil.com</a>
+
+                            <div class="wrapper">
+                                <div class="separator"></div>
+                                <div class="separator"></div>
+                                <div class="separator"></div>
+                            </div>
+
+                        </div>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="#logo" class="label-2 footer-link hover-underline">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+                            </li>
+
+                            <li>
+                                <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="label-2 footer-link hover-underline">Contact</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="footer-list">
+
+                            <li>
+                                <a href="https://facebook.com" class="label-2 footer-link hover-underline">Facebook</a>
+                            </li>
+
+                            <li>
+                                <a href="https://instagram.com"
+                                    class="label-2 footer-link hover-underline">Instagram</a>
+                            </li>
+
+                            <li>
+                                <a href="https://twitter.com" class="label-2 footer-link hover-underline">Twitter</a>
+                            </li>
+
+                            <li>
+                                <a href="https://youtube.com" class="label-2 footer-link hover-underline">Youtube</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">&copy; 2024 Zaika . All Rights Reserved </p>
+                    </div>
+
+                </div>
+            </footer>
+
+            <!-- 
+    - #BACK TO TOP
+  -->
+
+            <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+                <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+            </a>
+            <script src="/js/adminafterlogin.js"></script>
+            <!-- 
+    - custom js link
+  -->
+            <script src="/js/script.js"></script>
+
+            <!-- 
+    - ionicon link
+  -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const addMarkerForm = document.getElementById('add-marker-form');
+
+                    addMarkerForm.addEventListener('submit', async (e) => {
+                        e.preventDefault();
+
+                        const name = document.getElementById('name').value;
+                        const description = document.getElementById('description').value;
+                        const lat = parseFloat(document.getElementById('lat').value);
+                        const lng = parseFloat(document.getElementById('lng').value);
+
+                        try {
+                            const response = await fetch('/admin/add-marker', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ name, description, lat, lng }),
+                            });
+
+                            const data = await response.json();
+                            if (response.ok) {
+                                alert('Marker added successfully');
+                                // Optionally, reload or fetch updated markers to refresh the map
+                            } else {
+                                alert(`Error: ${data.error}`);
+                            }
+                        } catch (error) {
+                            console.error('Error adding marker:', error);
+                            alert('Failed to add marker');
+                        }
+                    });
+                });
+                async function refreshMapMarkers() {
+                    map.eachLayer((layer) => {
+                        if (layer instanceof L.Marker) {
+                            map.removeLayer(layer);
+                        }
+                    });
+
+                    await fetchFooditems(12.9716, 77.5946); // Fetch and display updated markers
+                }
+
+            </script>
+</body>
+
+</html>

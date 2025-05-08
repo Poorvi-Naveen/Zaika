@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coorg Coffee House</title>
+  <meta name="title" content="Zaika - Your Guide to nearby Culinary Treasures">
+  <meta name="description" content="This is a local cuisine finder website developed primitively">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" as="image" href="/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="/images/hero-slider-3.jpg">
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #250114;
+      color: #333;
+    }
+
+    /* Header Styling */
+    .header1 {
+      background-color: hsl(38, 61%, 73%);;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Menu Container */
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      position: relative
+    }
+
+    /* Menu Item Styling */
+    .menu-item {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      position: relative
+    }
+
+    .menu-item img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .menu-item-content {
+      padding: 15px;
+    }
+
+    .menu-item-content h3 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #000000;
+    }
+
+    .menu-item-content p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #000000;
+    }
+
+    .menu-item-content .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: hsl(38, 63%, 52%);;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="/images/mainlogo.png" width="160" height="50" alt="Zaika - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="/images/mainlogo.png" width="160" height="50" alt="Zaika - Home">
+        </a>
+
+       
+      </nav>
+
+      <a href="/details/coorg/coorg" class="btn btn-secondary">
+        <span class="text text-1">Back</span>
+
+        <span class="text text-2" aria-hidden="true">Back</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+  <div class="header1">Coorg Coffee House</div>
+  <div class="separator"></div>
+  <div class="separator"></div>
+  <div class="separator"></div>
+  <div class="separator"></div>
+  <div class="separator"></div>
+  <div class="separator"></div>
+  <!-- Menu Container -->
+  <div class="menu-container">
+    <!-- Menu Item 1 -->
+    <div class="menu-item">
+      <img src="/images/kabbek kapi.jpg" alt="Dish 1">
+      <div class="menu-item-content">
+        <h3>Kabbek kappi</h3>
+        <p>
+            
+        Sweet, refreshing, tangy, flavorful, aromatic, traditional.</p>
+        <p class="price">₹75</p>
+      </div>
+    </div>
+
+    <!-- Menu Item 2 -->
+    <div class="menu-item">
+      <img src="/images/vanillafilter.jpg" alt="Dish 2">
+      <div class="menu-item-content">
+        <h3>Filter Coffee Vanilla</h3>
+        <p>Rich, smooth, aromatic, creamy, sweet, indulgent. </p>
+        <p class="price">₹105</p>
+      </div>
+    </div>
+  </div>
+  <script src="/js/script.js"></script>
+
+</body>
+</html>
