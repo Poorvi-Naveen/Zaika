@@ -41,8 +41,8 @@ Zaika bridges the gap between international visitors and local food culture. It 
 
 ## Installation Guide
 1. Clone the repository :
-   - git clone https://github.com/yourusername/zaika-local-cuisine-finder.git
-   - cd zaika-local-cuisine-finder
+   - git clone https://github.com/Poorvi-Naveen/Zaika.git
+   - cd Zaika
 2. Install dependencies :
    - npm install
 3. Start the server:
